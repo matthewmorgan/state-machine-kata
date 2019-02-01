@@ -131,6 +131,13 @@ describe('sequences of commands give expected results', () => {
       .toBe(STATES.GREEN);
   });
 
+
+  test('10 end up in red state', () => {
+    const accepted = machine.read(['1', '0']);
+    expect(machine.state)
+      .toBe(STATES.RED);
+  });
+
   test('10010 end up in red state', () => {
     const accepted = machine.read(['1', '0', '0', '1', '0']);
     expect(accepted)
