@@ -53,7 +53,7 @@ describe('state machine can transition', () => {
     machine = new StateMachine();
   });
 
-  xtest('reading 1 when in blue state changes state to green', () => {
+  test('reading 1 when in blue state changes state to green', () => {
     machine.read(['1']);
     expect(machine.state)
       .toBe(STATES.GREEN);

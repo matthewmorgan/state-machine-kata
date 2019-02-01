@@ -10,7 +10,7 @@ class StateMachine {
   }
 
   read(commands) {
-
+    this.state = STATES.GREEN;
   }
 }
 
