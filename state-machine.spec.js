@@ -7,14 +7,14 @@ describe('StateMachine business class can', () => {
     expect(machine.constructor.name)
       .toEqual('StateMachine');
   });
-  xtest('state machine accepts inputs', () => {
+  test('state machine accepts inputs', () => {
     const machine = new StateMachine();
     const inputs = ['1'];
     expect(() => machine.read(inputs))
       .not
       .toThrow();
   });
-  xtest('state machine accepts multiple inputs', () => {
+  test('state machine accepts multiple inputs', () => {
     const machine = new StateMachine();
     const inputs = ['1', '0'];
     expect(() => machine.read(inputs))
@@ -22,7 +22,7 @@ describe('StateMachine business class can', () => {
       .toThrow();
   });
 
-  xtest('can read the state itself from the machine', () => {
+  test('can read the state itself from the machine', () => {
     const machine = new StateMachine();
     expect(machine.state)
       .toBe(STATES.BLUE);
