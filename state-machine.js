@@ -10,7 +10,11 @@ class StateMachine {
   }
 
   read(commands) {
-    this.state = STATES.GREEN;
+    if (commands[0] === '0'){
+      this.state = STATES.BLUE;
+    } else {
+      this.state = STATES.GREEN;
+    }
   }
 }
 
