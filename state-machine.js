@@ -4,8 +4,8 @@ const STATES = {
 }
 
 class StateMachine {
-  constructor(state=undefined) {
-    this.state = state? state : STATES.BLUE;
+  constructor(state=STATES.BLUE) {
+    this.state = state;
   }
 
   read(commands) {
