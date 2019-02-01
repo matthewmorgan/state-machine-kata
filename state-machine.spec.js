@@ -30,7 +30,7 @@ describe('StateMachine business class can', () => {
 });
 
 describe('machines can be created with any desired initial state', () => {
-  xtest('can create a machine with a default red state', () => {
+  test('can create a machine with a default red state', () => {
     const machine = new StateMachine(STATES.RED);
     expect(machine.state)
       .toBe(STATES.RED);

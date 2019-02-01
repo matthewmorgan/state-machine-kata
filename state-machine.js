@@ -1,10 +1,11 @@
 const STATES = {
-    BLUE:"BLUE"
+    BLUE: "BLUE",
+    RED: "RED"
 }
 
 class StateMachine {
-  constructor() {
-    this.state=STATES.BLUE;
+  constructor(state=undefined) {
+    this.state = state? state : STATES.BLUE;
   }
 
   read(commands) {
