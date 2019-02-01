@@ -19,6 +19,7 @@ class StateMachine {
     else if (commands[0] === '1'){
       this.state = STATES.GREEN;
     }
+    return true;
   }
 }
 

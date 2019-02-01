@@ -123,7 +123,7 @@ describe('sequences of commands give expected results', () => {
     machine = new StateMachine(STATES.GREEN);
   });
 
-  xtest('two ones ends up at green, or accepted', () => {
+  test('two ones ends up at green, or accepted', () => {
     const accepted = machine.read(['1', '1']);
     expect(accepted)
       .toBe(true);
