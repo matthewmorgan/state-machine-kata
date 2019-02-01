@@ -35,12 +35,12 @@ describe('machines can be created with any desired initial state', () => {
     expect(machine.state)
       .toBe(STATES.RED);
   });
-  xtest('can create a machine with a default blue state', () => {
+  test('can create a machine with a default blue state', () => {
     const machine = new StateMachine(STATES.BLUE);
     expect(machine.state)
       .toBe(STATES.BLUE);
   });
-  xtest('can create a machine with a default green state', () => {
+  test('can create a machine with a default green state', () => {
     const machine = new StateMachine(STATES.GREEN);
     expect(machine.state)
       .toBe(STATES.GREEN);

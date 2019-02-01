@@ -1,6 +1,7 @@
 const STATES = {
     BLUE: "BLUE",
-    RED: "RED"
+    RED: "RED",
+    GREEN: "GREEN"
 }
 
 class StateMachine {
