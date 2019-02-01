@@ -14,6 +14,10 @@ class StateMachine {
       this.state = STATES.GREEN;
       return;
     }
+    if (this.state === STATES.GREEN && commands[0] === '0') {
+      this.state = STATES.RED;
+      return;
+    }
     if (commands[0] === '0'){
       this.state = STATES.BLUE;
     } else {

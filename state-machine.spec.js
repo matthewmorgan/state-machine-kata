@@ -104,13 +104,13 @@ describe('test transitions from green state', () => {
     machine = new StateMachine(STATES.GREEN);
   });
 
-  xtest('reading 1 causes green -> green transition', () => {
+  test('reading 1 causes green -> green transition', () => {
     machine.read(['1']);
     expect(machine.state)
       .toBe(STATES.GREEN);
   });
 
-  xtest('reading 0 causes green -> red transition', () => {
+  test('reading 0 causes green -> red transition', () => {
     machine.read(['0']);
     expect(machine.state)
       .toBe(STATES.RED);
